@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  contextPath: /demo
+##security:
+##  oauth2:
+##    resource:
+##      userInfoUri: https://demoexample1.auth.us-east-1.amazoncognito.com/oauth2/userInfo
+##      tokenInfoUri: https://demoexample1.auth.us-east-1.amazoncognito.com/oauth2/token
+##      jwk:
+##        key-set-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_VhgBqSBZs/.well-known/jwks.json
+##    client:
+ ##     clientId: v8hgj29i2dbcaaa8ail8b3q8b
+
+aws:
+  cognito:
+    clientId: 138iarodff365durr4fhjmhnjv
+    userPoolId: us-east-1_Th05AwGrX
+    identityPoolId: AWS.config.credentials.identityId
+    region: us-east-1
+    userNameField: username
+    groupsField: cognito:groups
+    connectionTimeout: 2000
+    readTimeout: 2000
+
+logging:
+  level:
+    com:
+      example: DEBUG
